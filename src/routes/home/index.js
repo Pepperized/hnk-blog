@@ -38,7 +38,7 @@ const Home = () => {
 				<div style={{display: 'flex', marginTop: '20px', top: 0, left: 0, right: 0, zIndex: 10 }}>
 					<div style={{flexGrow: 1}} />
 					<div style={{flexGrow: 0, color: 'white', padding: '8px', border: '1px solid white', textAlign: 'center', width: '15%', height: '30%', backgroundColor: '#444', borderRadius: '0 0 9999px 9999px'}}>
-					<Link href="/blogs"><div style={{fontSize: '36px', fontWeight: '100', color: 'white'}}>Enter</div></Link>
+					<Link href="/blogs"><div style={{fontSize: '36px', fontWeight: '100', color: 'white'}}>enter</div></Link>
 					</div>
 					<div style={{flexGrow: 1}} />
 				</div>
