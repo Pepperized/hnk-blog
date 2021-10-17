@@ -6,7 +6,7 @@
   position: relative;
   display: inline-block;
   font-weight: 500;
-  font-family: serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .pageTitle:after {
@@ -15,7 +15,7 @@
   left: 0px;
   content: '';
   width: 75%;
-  border-bottom: 2px solid #FFC107;
+  border-bottom: 2px solid #78E7C7;
 }
 
 h2 {
@@ -28,9 +28,9 @@ h2 {
   padding: 4px 8px;
   margin-left: 8px;
   text-transform: lowercase;
-  background-color: #ffdd037c;
+  background-color: #6ccfb3;
   border-radius: 5px;
-  color: #999;
+  color: #f8f8f8;
   font-size: 12px;
 }
 

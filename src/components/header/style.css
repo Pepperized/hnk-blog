@@ -8,9 +8,9 @@
 	padding: 0 15px;
 	font-size: 40px;
 	line-height: 100px;
-	font-weight: 400;
-	font-family: 'Courgette', 'Helvetica Neue', arial, sans-serif;;
-	color: #FFC107;
+	font-weight: 100;
+	font-family: 'Roboto', sans-serif;;
+	color: #444;
 }
 
 .header nav {
@@ -38,13 +38,13 @@
 .header nav a:hover,
 .header nav a:active,
 .header nav a.active {
-	color: #FFC107;
+	color: #78E7C7;
 }
 
 .header nav a:after {
 	content: '';
 	width: 0%;
-	border-bottom: 3px solid #FFC107;
+	border-bottom: 3px solid #78E7C7;
 	position: absolute;
 	bottom: -12px;
 	left: 0;

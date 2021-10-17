@@ -1,6 +1,9 @@
 import { h } from "preact";
 import { useEffect } from 'preact/hooks';
 import style from "./style";
+import phosMp4 from '../../assets/media/phos.mp4'
+import phosWebm from '../../assets/media/phos.webm'
+import { Link } from 'preact-router/match';
 
 const Home = () => {
 
@@ -17,39 +20,29 @@ const Home = () => {
 	},[]);
 
 	return (
-		<div class={style.home}>
-			<div class={style.about}>
-				<div class={style.imageContainer}>
-					<div class={style.image} />
-				</div>
-				<div class={style.quote}>
-					<div class={style.details}>
-						Jane presents traditional spanish art with a modern twist. Her work is
-						excellent quality, her technique is brilliant and her love of the
-						subject matter shines through.
+		<div style={{overflow: 'hidden', position: 'relative', height: '100vh'}}>
+			<video autoPlay muted loop id="bg-video">
+				<source src={phosWebm} type="video/webm"/>
+				<source src={phosMp4} type="video/mp4"/>
+			</video>
+			<div style={{position: 'absolute', width: '100%', height: '100%', top: 0, right: 0, left: 0, bottom: 0}}>
+				<div style={{display: 'flex', left: 0, right: 0, zIndex: 10 }}>
+					<div style={{flexGrow: 1}} />
+					<div style={{flexGrow: 0, color: 'white', borderLeft: '1px solid white', padding: '8px', borderBottom: '1px solid white', borderRight: '1px solid white', textAlign: 'center', width: '30%', height: '30%', backgroundColor: '#444', borderRadius: '0 0 9999px 9999px'}}>
+						<div style={{fontSize: '36px', fontWeight: '100'}}>facets</div>
+						<div style={{fontWeight: '300'}}>An HnK blog</div>
 					</div>
-					<div class={style.author}>- The Local Newspaper</div>
+					
+					<div style={{flexGrow: 1}} />
 				</div>
-			</div>
-			<div class={style.bio}>
-				<p class={style.bioleft}>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip ex ea commodo consequat. Duis aute irure dolor in
-					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-					culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-				<p class={style.bioright}>
-					Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-					accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-					ab illo inventore veritatis et quasi architecto beatae vitae dicta
-					sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-					aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-					qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-					dolorem ipsum quia dolor sit amet, consectetur.
-				</p>
+				<div style={{display: 'flex', marginTop: '20px', top: 0, left: 0, right: 0, zIndex: 10 }}>
+					<div style={{flexGrow: 1}} />
+					<div style={{flexGrow: 0, color: 'white', padding: '8px', border: '1px solid white', textAlign: 'center', width: '15%', height: '30%', backgroundColor: '#444', borderRadius: '0 0 9999px 9999px'}}>
+					<Link href="/blogs"><div style={{fontSize: '36px', fontWeight: '100', color: 'white'}}>Enter</div></Link>
+					</div>
+					<div style={{flexGrow: 1}} />
+				</div>
+				
 			</div>
 		</div>
 	);
