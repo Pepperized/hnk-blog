@@ -22,18 +22,19 @@ export default class App extends Component {
 	render(props) {
 		return (
 			<Provider value={props}>
+
 				<Router onChange={this.handleRoute}>
 					<Home path="/" />
+					<div>
+						<Header />
+						<div id="app">
+							<Blogs path="/blogs/" />
+							<Blog path="/blog/:name" />
+							<NotFoundPage type="404" default />
+						</div>
+					</div>
 				</Router>
-				<div id="app">
-					<Header />
-					<Router onChange={this.handleRoute}>
-						
-						<Blogs path="/blogs/" />
-						<Blog path="/blog/:name" />
-						<NotFoundPage type="404" default />
-					</Router>
-				</div>
+				
 			</Provider>
 		);
 	}
