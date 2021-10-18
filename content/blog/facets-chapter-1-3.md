@@ -3,7 +3,7 @@ title: "Facets: Chapter 1-3"
 date: 2021-10-18T18:35:36.086Z
 subtitle: Duty and Merit
 cover: /assets/screenshot_20211018-194210__01.jpg
-tags: Chapter Analysis, Themes, Volume 1
+tags: " Chapter Analysis, Themes, Volume 1"
 ---
 ## Welcome to Facets
 
